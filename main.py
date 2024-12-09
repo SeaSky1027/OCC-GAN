@@ -151,9 +151,9 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--gpu", type=int, default=0)
 
-    parser.add_argument("--train_data_path", type=str, default="")
-    parser.add_argument("--test_data_path", type=str, default="")
-    parser.add_argument("--ckpt_path", type=str, default="")
+    parser.add_argument("--train_data_path", type=str, default="./DCASE_2023_Challenge_Task_7_Dataset/dev")
+    parser.add_argument("--test_data_path", type=str, default="./DCASE_2023_Challenge_Task_7_Dataset/eval")
+    parser.add_argument("--ckpt_path", type=str, default="./pretrained_checkpoints")
 
     parser.add_argument("--name", default='test', type=str)
 

@@ -26,7 +26,7 @@ class Synthesizer:
         logging.info('\n')
 
         logging.info('Vocoder Setting')
-        self.vocoder = HiFiGanWrapper(ckpt_path=ckpt_path)
+        self.vocoder = HiFiGanWrapper(ckpt_path=ckpt_path, device=device)
         num_params = count_parameters(self.vocoder.generator)
         logging.info(f"Number of vocoder parameters: {num_params / 1000000:.2f} M")
         logging.info('\n')

@@ -84,7 +84,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     
     parser.add_argument("--gpu", type=int, default=0)
-    parser.add_argument("--name", type=str, default="OCC_GAN_B128")
+    parser.add_argument("--name", type=str, default="generator")
 
     parser.add_argument("--save_image_num", type=int, default=100)
     parser.add_argument("--n_candidate_gen_per_text", type=int, default=5)

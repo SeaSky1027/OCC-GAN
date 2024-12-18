@@ -65,7 +65,7 @@ def main(args):
     logging.info('\n')
 
     logging.info('Vocoder Setting')
-    vocoder = HiFiGanWrapper(ckpt_path=args.ckpt_path)
+    vocoder = HiFiGanWrapper(ckpt_path=args.ckpt_path, device=device)
     num_params = count_parameters(vocoder.generator)
     logging.info(f"Number of vocoder parameters: {num_params / 1000000:.2f} M")
     logging.info('\n')
